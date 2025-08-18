@@ -33,7 +33,7 @@ pipeline {
                 }
             } 
         }
-        stage("Install NPM Dependencies") {
+        stage("Installing NPM Dependencies") {
             steps {
                 sh "npm install"
             }
@@ -100,7 +100,7 @@ pipeline {
                 </body>
                 </html>
             """,
-            to: 'kastrokiran@gmail.com',
+            to: 'thiruvarasueas@gmail.com',
             mimeType: 'text/html',
             attachmentsPattern: 'trivy.txt'
         }
